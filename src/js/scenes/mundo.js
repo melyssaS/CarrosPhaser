@@ -31,7 +31,7 @@ export default class mundo extends Phaser.Scene {
     //Cambiar por los objetos lugar
     this.mapa = this.make.tilemap({ key: this.lugar.key });
     this.tilesets = this.mapa.addTilesetImage(this.lugar.tilesetsName, this.lugar.tilesetsKey);
-    this.solidos = this.mapa.createDynamicLayer(this.lugar.capa, this.tilesets, 20, 100);
+    this.solidos = this.mapa.createDynamicLayer(this.lugar.capa, this.tilesets, -52, 100);
     this.solidos.setCollisionByProperty({ solido: true });
 
 
