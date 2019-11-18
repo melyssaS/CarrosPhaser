@@ -1,0 +1,27 @@
+{
+  "name": "carro",
+  "version": "1.0.0",
+  "keywords": [
+    "util",
+    "functional",
+    "server",
+    "client",
+    "browser"
+  ],
+  "author": "DELL I3",
+  "contributors": [],
+  "dependencies": {
+    "express": "^4.17.1",
+    "phaser": "^3.20.1",
+    "socket.io": "^2.3.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "description": "game",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "license": "ISC"
+}

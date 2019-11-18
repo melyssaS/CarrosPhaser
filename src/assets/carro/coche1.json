@@ -1,0 +1,83 @@
+{
+	"textures": [
+		{
+			"image": "coche1.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 306,
+				"h": 50
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "coche11.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 100,
+						"h": 48
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 100,
+						"h": 48
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 100,
+						"h": 48
+					}
+				},
+				{
+					"filename": "coche12.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 100,
+						"h": 48
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 100,
+						"h": 48
+					},
+					"frame": {
+						"x": 103,
+						"y": 1,
+						"w": 100,
+						"h": 48
+					}
+				},
+				{
+					"filename": "coche13.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 100,
+						"h": 48
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 100,
+						"h": 48
+					},
+					"frame": {
+						"x": 205,
+						"y": 1,
+						"w": 100,
+						"h": 48
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:8959f3e38d8bff8d96263fb9e5656b5f:993a07b41aa5e5f123f3495caf5210a4:b510c04b0d6e6fa80a666776fc6b1e8b$"
+	}
+}
