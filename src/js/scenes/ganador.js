@@ -12,7 +12,7 @@ export default class ganador extends Phaser.Scene {
 
 
   create() {
-
+    this.cameras.main.backgroundColor.setTo(108, 210, 222);
  
     this.socket = io();
     this.socket.on('connect', () => {

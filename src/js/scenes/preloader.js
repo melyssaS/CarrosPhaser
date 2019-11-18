@@ -20,27 +20,26 @@ export default class Preloader extends Phaser.Scene {
     this.load.atlas('icarro3', 'src/assets/carro/coche3.png', 'src/assets/carro/coche3.json');
     this.load.json('fcarro3', 'src/assets/carro/fcoche3.json');
 
-  this.load.image("fondo1","src/assets/fonts/fondo2.png");
-  this.load.image("fondo2","src/assets/fonts/fondo3.png");
-  this.load.image("fondo3","src/assets/fonts/fondo4.png");
+    this.load.image("fondo1", "src/assets/fonts/fondo2.png");
+    this.load.image("fondo2", "src/assets/fonts/fondo3.png");
+    this.load.image("fondo3", "src/assets/fonts/fondo4.png");
     //Fuentes
 
     this.load.bitmapFont('font', 'src/assets/fonts/font.png', 'src/assets/fonts/font.fnt');
 
 
-//Mapas
+    //Mapas
+
     //Mapa1
-    this.load.tilemapTiledJSON('mapa', 'src/assets/mapa/mapa.json');
+    this.load.tilemapTiledJSON('mapa3', 'src/assets/mapa/mapa3.json');
     this.load.image('tiles', 'src/assets/mapa/tileSets.png');
     //Mapa2
-    this.load.tilemapTiledJSON('mapa2', 'src/assets/mapa/mapa2.json');
-    this.load.image('tiles2', 'src/assets/mapa/tileSets2.png');
-    //Mapa3
-    this.load.tilemapTiledJSON('mapa3', 'src/assets/mapa/mapa3.json');
-    
-    //Mapa4
     this.load.tilemapTiledJSON('mapa4', 'src/assets/mapa/mapa4.json');
-    this.load.image('tiles4','src/assets/mapa/Tileset.png');
+    this.load.image('tiles4', 'src/assets/mapa/Tileset.png');
+
+    //Fondo
+    this.load.tilemapTiledJSON('fondo','src/assets/mapa/fondo.json')
+    this.load.image('ifondo','src/assets/mapa/Fondo2.png')
 
     //Imagenes de Mapa
     this.load.image('mundo1', 'src/assets/mapa/mundo1.png');
