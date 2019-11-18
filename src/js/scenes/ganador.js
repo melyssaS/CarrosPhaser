@@ -42,15 +42,6 @@ this.socket.on('finalizar',()=>{
 
   })
 
-/*
-   
-    this.socket.on('enviarGanadores', (posicion) => {
-      console.log('aja')
-      var winner1 = this.add.bitmapText(window.innerWidth / 2, window.innerHeight / 2, 'font', 'Puesto 1: Player ' + posicion[0], 50).setOrigin(0.5).setCenterAlign().setInteractive();
-      var winner2 = this.add.bitmapText(window.innerWidth / 2, 60 + window.innerHeight / 2, 'font', 'Puesto 2: Player ' + posicion[1], 38).setOrigin(0.5).setCenterAlign().setInteractive();
-      var winner3 = this.add.bitmapText(window.innerWidth / 2, 120 + window.innerHeight / 2, 'font', 'Puesto 3: Player ' + posicion[2], 38).setOrigin(0.5).setCenterAlign().setInteractive();
-    })
-*/
   }
   update() { }
 

@@ -76,7 +76,7 @@ socket.emit('borrarImagen')
   });
 
   socket.on('nuevaPosicion', (info) => {
-    if (info.finish<=info.x) {
+    if (info.finish==info.x) {
       posicion.push(players[socket.id].user)   
       socket.emit('cambiar',players[socket.id].playerId)
     }
