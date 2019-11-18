@@ -83,10 +83,11 @@ export default class mundo extends Phaser.Scene {
     })
 
 
-    this.socket.on('cambiar', (id) => {
-      if (id == this.socket.id) {
+    this.socket.on('cambiar', (player) => {
+      if (player. playerId == this.socket.id) {
+        var user=player.user;
         this.socket.close();
-        this.scene.start('ganador');
+        this.scene.start('ganador',user);
       }
     }, this);
     this.cursors = this.input.keyboard.createCursorKeys();

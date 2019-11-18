@@ -66,6 +66,7 @@ socket.emit('borrarImagen')
     players[socket.id].imagen=componentes[1];
     players[socket.id].fisica=componentes[2];
     coche.push(componentes[0]);
+    console.log('Coches '+coche)
     if (coche.length==cantidad) {
       io.emit('cambioEscena');
     }
@@ -77,8 +78,8 @@ socket.emit('borrarImagen')
 
   socket.on('nuevaPosicion', (info) => {
     if (info.finish<=info.x) {
-      posicion.push(players[socket.id].user)   
-      socket.emit('cambiar',players[socket.id].playerId)
+      //posicion.push(players[socket.id].user)   
+      socket.emit('cambiar',players[socket.id])
     }
     socket.broadcast.emit('emitirPosicion', [info, socket.id]);
 
@@ -94,8 +95,9 @@ socket.emit('borrarImagen')
   }, this);
 
 
- socket.on('posicion', ()=>{
-   console.log("Posiciones "+posicion);
+ socket.on('posicion', (user)=>{
+   posicion.push(user)  
+   console.log("Posiciones "+posicion); 
     io.emit('posiciones',{pos:posicion,co:coche})
     if (posicion.length==cantidad) {
       io.emit('finalizar')
